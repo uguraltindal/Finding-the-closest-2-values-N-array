@@ -12,8 +12,9 @@ for (i=0; i < n; i++)
 {
 printf(" %d ", arr[i]);
 }
-
+  
 }
+
 void merge(int arr[], int left, int mid, int right)
 {
 int i, j, k;
@@ -55,8 +56,10 @@ j++;
 k++;
 }
 }
+
 void mergeSort(int arr[], int left, int right)
 {
+  
 if (left < right)
 {
 int mid = left+(right-left)/2; // Her girişinde mid değerinin belirlenmesi.
@@ -64,7 +67,10 @@ mergeSort(arr, left, mid); // Sağ ve sol dizileri sıraladık.
 mergeSort(arr, mid+1, right); // Recursive olarak mergeSort kısmı.
 merge(arr, left, mid, right);
 }
+  
 }
+
+
 void closest(int arr[],int n)
 {
 int i,min,range;
